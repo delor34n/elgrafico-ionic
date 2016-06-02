@@ -1,0 +1,10 @@
+<ion-view view-title="Todas las noticias" ng-controller="NewsCtrl as vm">
+  <ion-content>
+    <div class="list">
+      <a class="item" ng-repeat="new in vm.news">
+        <img ng-src="{{new.img_url}}"/>
+        {{new.title}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
