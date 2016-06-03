@@ -9,7 +9,9 @@
   function NewsCtrl(elgraficoApi){
 
     var vm = this;
-    vm.news = elgraficoApi.getNews();
+    elgraficoApi.getNews().then(function(data){
+      vm.news = data;
+    });
   }
 
 })();
